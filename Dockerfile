@@ -22,7 +22,7 @@ COPY . .
 RUN go build -o /goproxy
 
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 6379
 
 # Command to run the executable
 CMD ["/goproxy", "-localAddr", "0.0.0.0:6379", "-remoteAddr", "keydb:6379"]
