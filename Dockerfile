@@ -4,7 +4,7 @@
 # docker run -d -p <ip>:<port>:<containerport> goproxy
 
 # Use the official Golang image as the base image
-FROM golang:1.20-alpine
+FROM golang:1.22-alpine
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
