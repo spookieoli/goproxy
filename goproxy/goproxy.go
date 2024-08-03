@@ -40,6 +40,7 @@ func (p *Proxy) handleConnection(conn net.Conn) {
 
 // Serve Function to start the proxy
 func (p *Proxy) Serve() {
+	fmt.Println("Starting proxy on", p.localAddr, "forwarding to", p.remoteAddr)
 	listener, err := net.Listen("tcp", p.localAddr)
 	if err != nil {
 		fmt.Println(err)
