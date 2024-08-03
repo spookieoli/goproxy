@@ -14,8 +14,8 @@ type Proxy struct {
 
 // NewProxy Constructor for Proxy
 func NewProxy() *Proxy {
-	localAddr := flag.String("localaddr", "0.0.0.0:8080", "Local address")
-	remoteaddr := flag.String("remoteaddr", "127.0.0.1:8080", "Remote address")
+	localAddr := flag.String("localAddr", "0.0.0.0:8080", "Local address")
+	remoteaddr := flag.String("remoteAddr", "127.0.0.1:8080", "Remote address")
 	return &Proxy{*localAddr, *remoteaddr}
 }
 
